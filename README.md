@@ -1,2 +1,6 @@
 # Raid-Zero-Programming-Guide
-Guide for programming related aspect
+This is the guide for programming related information
+
+[Click here for the getting started guide](Getting_Started.md)
+
+[Click here for the sensors guide](Sensors.md)
