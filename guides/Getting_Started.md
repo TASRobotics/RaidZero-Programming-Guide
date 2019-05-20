@@ -48,6 +48,7 @@ The PDP, PCM, Roborio, and TalonSRX may need firmware updates.
 3. Under Field-Upgrade Device Firmware, select the CRF and click Update Device
 
 Current Versions:
+
 | Hardware Name | Firmware Version | Location |
 |---------------|------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Roborio | 6.0.0.f | C:\Program Files (x86)\National Instruments\Shared\Firmware\cRIO\76F2 |
@@ -63,4 +64,4 @@ The driver station is the program used to control the Robot. You can get familia
     - Change this whenever you work on a different robot.
 2. At the same tab, change the dashboard type to Shuffleboard.
 
-After finishing this guide, you should go on to the [First Program guide](guides/First_Program.md).
+After finishing this guide, you should go on to the [First Program guide](First_Program.md).

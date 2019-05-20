@@ -13,4 +13,4 @@ If the driver station is not connecting to the robot, it could be two reasons: f
 4. Now, click all the checkboxes for FRC Driver Station
 
 ## Changing Team Number
-Refer back [here](guides/Getting_Started.md#Driver-Station)
+Refer back [here](Getting_Started.md#Driver-Station)
