@@ -3,19 +3,24 @@
 This is the guide for your first program. Follow this guide if you have finished the getting started guide. [Here](https://wpilib.screenstepslive.com/s/currentCS/m/java) is a guide that covers a lot of the programming for FRC. It is a little long, therefore the steps below will be shorter and easier for you to create a basic program to control the bot. After this, it is your turn to program whatever you want. Use the helpful sites guide to help whenever you get stuck in the future.
 
 ## Starting a New Project
+
 To start, you need to create a new project. 
+
 1. Click on the wpilib icon on the upper right then select “Create a new project”
 2. Go through each step and fill it out. It should look something like this:
 3. Click Generate
 
 ## Installing Third Party Libraries
+
 For VS Code to recognize third party libraries such as CTRE, you have to add them to VS Code.
+
 1. Click on the WPILib Command Icon in VS Code (Upper Right Corner)
 2. Look for “Manage Vendor Libraries” and press enter
 3. Click “Install new libraries (offline)”
 4. Select the third party libraries and click “Go”
 
 ## Import, Declare, Initialize
+
 Before doing anything, you can delete all the default template code except for line 8. Then paste this in as a template.
 
 ```java
@@ -83,7 +88,8 @@ Importing is done before the class, declaring is done before robotInit, and init
 
 The example motor is currently told to run at 0%, so it is up to you to figure how to control with the joystick.
 
-#### Deploying Code
+## Deploying Code
+
 To deploy the program into the roborio, connect to it first either by usb or wireless. Then press “Shift + F5”. Wait until it says build successful.
 
 *Note: Be sure that the team number is the same as the roborio number. To change this, there is a wpilib command called “Set Team Number”.

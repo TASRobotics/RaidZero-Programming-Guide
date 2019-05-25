@@ -17,3 +17,4 @@ These are a few sites and manuals that will be helpful for you.
 - [Hardware Overview](https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/599672-frc-control-system-hardware-overview) 
 - [Wiring Overview](https://wpilib.screenstepslive.com/s/currentCS/m/cs_hardware/l/144971-wiring-the-frc-control-system) 
 - [CTRE Documentation/Manual](https://phoenix-documentation.readthedocs.io/en/latest/index.html) 
+- [SparkMax Documentation/Download](http://www.revrobotics.com/sparkmax-software/)
