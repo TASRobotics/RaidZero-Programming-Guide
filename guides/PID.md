@@ -2,6 +2,8 @@
 
 This is a guide for what PID is and how to tune it. This will be based off the TalonSRX. If you are using some other motor controller, read about it online.
 
+Most of the information comes from the CTRE documentation. It is highly recommended to [read through this manual](https://phoenix-documentation.readthedocs.io/en/latest/index.html).
+
 PID control is what we currently use to control the motors for autonomous. What it does is you set a setpoint, then the sensors report data, then the data is processed to the correct motor power to get what you desired. In other words, it is closed loop control. Below is a flowchart of how it works:
 
 ![PID Flowchart](https://upload.wikimedia.org/wikipedia/commons/4/40/Pid-feedback-nct-int-correct.png)
@@ -41,7 +43,7 @@ There are multiple PID modes:
 - Motion Profile Arc
 - Motion Magic
 
-Position is used if you want the motor to run to certain position.
+Position is used if you want the motor to run to a certain position.
 
 Velocity is used if you want the motor to maintain a certain speed.
 
@@ -52,3 +54,12 @@ Motion profile is used if you want to generate a path for the robot to follow.
 Motion Profile Arc is same as above, but the path includes an additional angle to follow.
 
 Magic Motion is simplified motion profile. You tell it speed and acceleration and it will create the path for you.
+
+## PID Tuning
+
+There are many methods for PID Tuning, but sometimes they work, sometimes they don't. Below is what I believe to be the best way.
+
+1. Set all other constants except for F to zero. Calculate F by dividing 1024 with the max speed of the sensor. F is necessary for every mode other than position
+2. Now, start with the P constant at 1 and increase until the system oscillates.
+3. Afterwards, add a D constant. Start the D constant around 10 times the P value and turn it up until you're satisfied.
+4. Add an I constant if necessary. This should be added when system is near the setpoint, but is not quite there. Start at around 0.001. Remember to put an I Zone Constant!
