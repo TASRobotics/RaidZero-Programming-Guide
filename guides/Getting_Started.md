@@ -18,7 +18,7 @@ You need to install 3 different things in order. The first is FRC Driver Station
 
 ### CTRE
 
-1. Click [here](http://www.ctr-electronics.com/hro.html#product_tabs_technical_resources)
+1. Click [here](https://github.com/CrossTheRoadElec/Phoenix-Releases/releases)
 2. Download the newest version of “CTRE Phoenix Framework Installer” (zip file) 
 3. Unzip and run the program
 
