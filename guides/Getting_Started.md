@@ -4,70 +4,68 @@ This is a quick guide to get setup to start programming.
 
 ## Installing Programs
 
-You need to install 3 different things in order. The first is FRC Driver Station. This program allows you to control the robot. Next is CTRE Toolsuite, which is the library for the motor controllers. Finally, VS Code is the program to write the robot code.
+You need to install 4 different things. The first is FRC Driver Station, which allows you to control the robot. The second is the CTRE Toolsuite, which is the library for the motor controllers. Next is the REV Hardware Client, which allows you to interface with the PDP and SparkMAX motor controllers. Finally, WPILib is the IDE we will use to write the robot code.
 
 ### FRC Driver Station
 
-1. Download FRC Driver Station from [here](http://www.ni.com/download/first-robotics-software-2017/7904/en/)
+1. Download and run the installer from [here](http://www.ni.com/download/first-robotics-software-2017/7904/en/)
     - Needs login with NI Account. Make one if you don’t have one 
-2. Unzip the whole folder and run setup.exe
 3. Click Next for everything. There is no need to fill in any information
-4. You can just skip NI Licensing
-    - Serial Number (if necessary): M83X20058
-    - Season Unlock Password: $Robots&in#SPACE!!
+4. You can skip NI Licensing
+5. If you encounter errors during the installation, try running the offline installer instead. 
 
 ### CTRE
 
 1. Click [here](https://github.com/CrossTheRoadElec/Phoenix-Releases/releases)
-2. Download the newest version of “CTRE Phoenix Framework Installer” (zip file) 
-3. Unzip and run the program
+2. Download the latest version of “CTRE Phoenix Framework Installer” for your os
+3. Run the installer
+
+### REV Hardware Client
+
+1. Click [here](https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions)
+2. Download the latest version of the REV Hardware Client
+3. Run the installer
 
 ### WPILib Suite
 
-1. Click [here](https://github.com/wpilibsuite/allwpilib/releases) and download the Windows 64 installer
-2. Select all or current user, doesn’t matter
-3. Make sure all checkboxes are checked. You probably have to select/download VS Code
-4. Click “Execute Install” 
+1. Click [here](https://github.com/wpilibsuite/allwpilib/releases) and download the Windows 64 iso file
+2. Right click on the downloaded iso and mount the disk image
+3. Run the installer in the disk
+4. You should choose the option that reinstalls VScode on your computer (Top Left)
 
 ## Roborio
 
 Roborio (the brain of the robot) needs to be configured correctly for it to work for this year. Here are the steps.
 
-1. Updating the firmware and imaging the Roborio: https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/1009233-imaging-your-roborio 
-    - Note: If the shortcut is not on the desktop, it is located here: 
-    C:\Program Files (x86)\National Instruments\LabVIEW 2017\project\roboRIO Tool
+1. Updating the firmware and imaging the Roborio: https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/imaging-your-roborio.html?highlight=robo%20rio%20imaging
 2. Install Phoenix Library/Diagnostic
     - Open Phoenix Tuner and connect to the robot
     - Click “Install Phoenix Library/Diagnostics”
 
 ## Configuring Radio
 
-These are the steps for configuring the radio. Complete screen steps live instructions [here](https://wpilib.screenstepslive.com/s/4485/m/13503/l/144986-programming-your-radio-for-home-use).
+These are the steps for configuring the radio. [here](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/radio-programming.html?highlight=radio).
 
 1. Install radio configuration utility:
-https://wpilib.screenstepslive.com/s/currentCS/m/getting_started/l/144986-programming-your-radio#download_the_software 
+https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/radio-programming.html?highlight=radio
 2. Choose radio type
 3. Load firmware
 4. Type in team number, then configure.
 
 ## Updating Firmwares
 
-The PDP, PCM, Roborio, and TalonSRX may need firmware updates.
+The PDP, PCM, Roborio, and Motor Controllers may need firmware updates.
+
+Updating the CTRE Motor Controllers, Pidgeon
 
 1. Connect to roborio and open up Phoenix Tuner
 2. Navigate to CAN Devices tab.
-3. Under Field-Upgrade Device Firmware, select the CRF and click Update Device
+3. Under Field-Upgrade Device Firmware, locate the most up-to-date CRF, and click Update Device
 
-Current Versions:
+Updating the PDP, CAN Motor Controllers
 
-| Hardware Name | Firmware Version | Location |
-|---------------|------------------|----------|
-| Roborio | 6.0.0.f | C:\Program Files (x86)\National Instruments\Shared\Firmware\cRIO\76F2 |
-| PDP | 1.40 | All CTRE hardware are under the folder C:\Users\Public\Documents\Cross The Road Electronics\LifeBoat\HERO Firmware Files |
-| PCM | 1.65 |  |
-| Talon SRX | 4.22 |  |
-| PigeonIMU | 4.13 |  |
-| CANifier | 4.0 |  |
+1. Connect to the PDP and open up REV Hardware Client
+3. Select Check for Updates, then click Update All
 
 ## Driver Station
 
